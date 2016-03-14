@@ -1,0 +1,19 @@
+{
+	"name": "Thesaurus",
+	"description": "Thesaurus - shows synonyms, meaning on double clicking on a word",
+	"version": "1",
+	"manifest_version": 2,
+	"content_scripts": [
+    {
+      "matches": ["http://*/*","https://*/*"],
+      "js": ["jquery-1.11.3.min.js", "script.js"]
+    }
+  ],
+	"browser_action": {
+		"default_title": "Thesaurus",
+		"default_icon": "text.png"
+	},
+	"permissions": [
+		"http://thesaurus.altervista.org/*"
+	]
+}
